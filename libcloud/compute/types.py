@@ -40,6 +40,7 @@ class Provider(object):
     Defines for each of the supported providers
 
     :cvar DUMMY: Example provider
+    :cvar VCC: Verizon Cloud Compute
     :cvar EC2_US_EAST: Amazon AWS US N. Virgina
     :cvar EC2_US_WEST: Amazon AWS US N. California
     :cvar EC2_EU_WEST: Amazon AWS EU Ireland
@@ -78,6 +79,7 @@ class Provider(object):
     :cvar OUTSCALE_INC: Outscale INC driver.
     """
     DUMMY = 'dummy'
+    VCC = 'vcc'
     EC2 = 'ec2_us_east'
     RACKSPACE = 'rackspace'
     GCE = 'gce'
