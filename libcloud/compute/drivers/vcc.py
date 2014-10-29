@@ -17,6 +17,7 @@ Verizon Cloud Compute Driver (http://cloud.verizon.com/)
 API Documentation: http://cloud.verizon.com/documentation/
 Created by Michael Kaldawi (michael.kaldawi@verizon.com, mkaldawi@gmail.com)
 """
+from setuptools.compat import unicode
 
 """
 Instructions
@@ -140,11 +141,11 @@ class VerizonCloudComputeNodeDriver(NodeDriver):
     """
     Verizon node driver class.
 
-    >>> from libcloud.compute.providers import get_driver
-    >>> driver = get_driver('vcc')
-    >>> conn = driver('il2f54nrdnzqtijtcojmec047986db3d', \
-    'ohwhi4g3einmxlzzzwdptyis4kebqvdbqo4vmv6t4axy5iq6mptygqwjoo77ec3b')
-    >>> conn.list_nodes()
+    # >>> from libcloud.compute.providers import get_driver
+    # >>> driver = get_driver('vcc')
+    # >>> conn = driver('il2f54nrdnzqtijtcojmec047986db3d', \
+    # 'ohwhi4g3einmxlzzzwdptyis4kebqvdbqo4vmv6t4axy5iq6mptygqwjoo77ec3b')
+    # >>> conn.list_nodes()
     """
     type = Provider.VCC
     api_name = 'vcc'

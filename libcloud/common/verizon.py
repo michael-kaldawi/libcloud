@@ -26,6 +26,7 @@ import json
 import re
 
 import requests
+from setuptools.compat import unicode
 
 
 class VerizonAuth(object):
@@ -131,7 +132,7 @@ class VerizonAuth(object):
             Print and/or return the results.
         """
         if pretty_print:
-            print json.dumps(self.results, indent=3)
+            print(json.dumps(self.results, indent=3))
             return
         else:
             return self.results
@@ -183,8 +184,8 @@ class VerizonAuth(object):
                              pretty_print=pretty_print)
 
     if __name__ == '__main__':
-        print "Verizon Cloud Compute Driver (http://cloud.verizon.com/) \
+        print("Verizon Cloud Compute Driver (http://cloud.verizon.com/) \
             API Documentation: http://cloud.verizon.com/documentation/ \
             Created by Michael Kaldawi (michael.kaldawi@verizon.com, " \
-              "mkaldawi@gmail.com)"
+              "mkaldawi@gmail.com)")
         pass
