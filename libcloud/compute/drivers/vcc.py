@@ -43,10 +43,9 @@ from libcloud.compute.base import (Node, NodeDriver, NodeImage, NodeSize,
 from libcloud.utils.networking import is_private_subnet
 from libcloud.common.verizon import VerizonAuth
 
-API_HOST = 'iadg2.cloud.verizon.com'            # TO BE REMOVED
-
-ACCESS_KEY = 'hzjhfqv37h2w2c5kt6ba9831d92456c8'     # TO BE REMOVED
-SECRET_KEY = '6nn3pbmwh5vtstjmfruynxy3uo7kcy22aabdj5c5nuw2tfc7j3udhhvj426t7wcr' # TO BE REMOVED
+API_HOST = 'iadg2.cloud.verizon.com'            # TO BE REMOVED - for dev
+ACCESS_KEY = 'API_KEY'     # TO BE REMOVED - for dev
+SECRET_KEY = 'API_SECRET_KEY' # TO BE REMOVED - for dev
 
 
 NODE_STATE_MAP = {
@@ -143,8 +142,8 @@ class VerizonCloudComputeNodeDriver(NodeDriver):
 
     # >>> from libcloud.compute.providers import get_driver
     # >>> driver = get_driver('vcc')
-    # >>> conn = driver('il2f54nrdnzqtijtcojmec047986db3d', \
-    # 'ohwhi4g3einmxlzzzwdptyis4kebqvdbqo4vmv6t4axy5iq6mptygqwjoo77ec3b')
+    # >>> conn = driver('API_KEY', \
+    # 'API_SECRET_KEY')
     # >>> conn.list_nodes()
     """
     type = Provider.VCC
