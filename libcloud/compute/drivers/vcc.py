@@ -42,10 +42,10 @@ from libcloud.compute.base import (Node, NodeDriver, NodeImage, NodeSize,
 from libcloud.utils.networking import is_private_subnet
 from libcloud.common.verizon import VerizonAuth
 
-API_HOST = 'iadg2.cloud.verizon.com'            # TO BE REMOVED
+API_HOST = 'HOST_URI'            # TO BE REMOVED
 
-ACCESS_KEY = 'hzjhfqv37h2w2c5kt6ba9831d92456c8'     # TO BE REMOVED
-SECRET_KEY = '6nn3pbmwh5vtstjmfruynxy3uo7kcy22aabdj5c5nuw2tfc7j3udhhvj426t7wcr' # TO BE REMOVED
+ACCESS_KEY = 'API_ACCESS_KEY'     # TO BE REMOVED
+SECRET_KEY = 'API_SECRET_KEY' # TO BE REMOVED
 
 
 NODE_STATE_MAP = {
